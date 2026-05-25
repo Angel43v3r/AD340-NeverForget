@@ -163,8 +163,8 @@ Create the files needed for the assignment. Follow Assignment Instruction.
 
 ## Version Control (GitHub)
 ### GitHub Initial Setup
-1. Open Android Studio
-2. Select `File` -> `Git` -> `Share Project On GitHub`
+#### 1. Open Android Studio
+#### 2. Select `File` -> `Git` -> `Share Project On GitHub`
 
 ### To Commit:
 Select `File` -> `Git` -> `GitHub` -> Commit
