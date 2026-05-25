@@ -44,7 +44,7 @@ fun NoteScreen(viewModel: NoteViewModel, modifier: Modifier = Modifier) {
         modifier = modifier.fillMaxSize().padding(16.dp)
     ) {
         Text(
-            text = "My Notes",
+            text = "Never Forget",
             style = MaterialTheme.typography.headlineMedium,
             modifier = Modifier.fillMaxWidth().padding(bottom = 16.dp),
             textAlign = androidx.compose.ui.text.style.TextAlign.Center,
@@ -77,7 +77,7 @@ fun NoteScreen(viewModel: NoteViewModel, modifier: Modifier = Modifier) {
         // Empty state
         if (notes.isEmpty()) {
             Text(
-                text = "No notes yet. Add one and click 'Save Note'",
+                text = "No notes yet. Write a note and tap 'Save Note'",
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
                 modifier = Modifier.align(Alignment.CenterHorizontally)
             )

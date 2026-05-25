@@ -139,6 +139,9 @@ Create the files needed for the assignment. Follow Assignment Instruction.
 
 ## Assignment Instruction
 
+![Never Forget App Image 1](https://github.com/Angel43v3r/AD340-neverForget/blob/master/assets/NeverForgetApp01.png)
+![Never Forget App Image 2](https://github.com/Angel43v3r/AD340-neverForget/blob/master/assets/NeverForgetApp00.png)
+
 ### Technical Requirements
 #### 1. The Data Layer
 **Entity:** Create a `Task` class. It must include:
