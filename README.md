@@ -9,8 +9,8 @@
 ## Table Of Contents
 1. [Objective](#objective)
 2. [How to Use](#how-to-use)
-3. [Assignment Instruction](#assignment-instruction)
-4. [Guidelines](#guidelines)
+3. [Getting Started](#getting-started)
+4. [Assignment Instruction](#assignment-instruction)
 5. [Version Control](#version-control-github)
 6. [Contributing](#contributing)
 7. [License](#license)
@@ -79,35 +79,12 @@ Build configuration language: Kotlin DSL (build.gradle.kts).
 - Wait for Gradle to finish "syncing" (this may take a few minutes on the first run).
 
 
-## Assignment Instruction
-
-### Technical Requirements
-#### 1. The Data Layer
-**Entity:** Create a `Task` class. It must include:
-
-- An auto-generated `id` (Primary Key).
-- A `title` (String).
-- A `isCompleted` status (Boolean).
-
-**DAO:** Define an interface with methods to:
-
-- `insert(task: Task):` Add a new task.
-- `getAllTasks():` Return a `Flow<List<Task>>` or `LiveData<List<Task>>`.
-- `delete(task: Task):` Remove a specific task.
-
-**Database:** A class extending `RoomDatabase` that provides the DAO.
-
-#### 2. The UI Layer
-**Input Field:** An `EditText` (or `TextField`) and a "Save" button to add tasks.
-
-**The List:** A `RecyclerView` (or `LazyColumn`) that updates automatically when the database changes.
-
-## Guidelines
+## Getting Started
 ### STEP 1: Go to `File` -> `New` -> `New Project` -> Select `Empty Activity`
 
 ### STEP 2: Go to `Project` -> `AD340-neverForget` folder -> `app` -> `build.gradle.kts`
 
-### STEP 3: In `app/build.gradle.kts` under **dependencies** add 
+### STEP 3: In `app/build.gradle.kts` under **dependencies** add
 ```kotlin
 dependencies {
     val room_version = "2.7.1"
@@ -150,6 +127,38 @@ android.nonTransitiveRClass=true
 android.disallowKotlinSourceSets=false
 ```
 ### STEP 7: Go to `File` -> `Sync Project with Gradle Files`
+
+### STEP 8: In `app/src/main/java/com.example.ad340_neverforget` folder,
+Create the files needed for the assignment. Follow Assignment Instruction.
+- MainActivity.kt
+- Note.kt
+- NoteDao.kt
+- NoteDatabase.kt
+- NoteViewModel.kt
+
+
+## Assignment Instruction
+
+### Technical Requirements
+#### 1. The Data Layer
+**Entity:** Create a `Task` class. It must include:
+
+- An auto-generated `id` (Primary Key).
+- A `title` (String).
+- A `isCompleted` status (Boolean).
+
+**DAO:** Define an interface with methods to:
+
+- `insert(task: Task):` Add a new task.
+- `getAllTasks():` Return a `Flow<List<Task>>` or `LiveData<List<Task>>`.
+- `delete(task: Task):` Remove a specific task.
+
+**Database:** A class extending `RoomDatabase` that provides the DAO.
+
+#### 2. The UI Layer
+**Input Field:** An `EditText` (or `TextField`) and a "Save" button to add tasks.
+
+**The List:** A `RecyclerView` (or `LazyColumn`) that updates automatically when the database changes.
 
 
 ## Version Control (GitHub)
